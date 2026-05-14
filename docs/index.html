@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FYIPedia Widget Ecosystem — 53 Sites · 11 Families · 87 npm Packages</title>
+  <meta name="description" content="FYIPedia is the umbrella for 11 FYI Families spanning 53 reference sites. Browse widget docs for color, font, emoji, unicode, bird, plant, dinosaur, unit, time, holiday, calculator, salary, university, barcode, QR, NFC, BLE, RFID, smartcard, airport, airline, plane, train, cable, TLD, IP, HTTP status, chemistry, alloy, gem, star, mineral, anatomy, pill, drug, nutrition. Zero deps, MIT license.">
+  <meta name="theme-color" content="#8B5CF6">
+  <meta name="keywords" content="fyipedia, embed widget, oembed, javascript widget, shadow dom widget, reference data widgets, open source widgets, npm widget, fyi family">
+
+  <meta property="og:title" content="FYIPedia Widget Ecosystem — 11 Families · 53 Sites · 87 Packages">
+  <meta property="og:description" content="The umbrella widget hub for FYIPedia: 11 FYI Families, 53 reference sites, 87 npm packages. One ecosystem for embedding reference data on any website.">
+  <meta property="og:url" content="https://widget.fyipedia.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fyipedia.com/static/og/homepage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="FYIPedia">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FYIPedia Widget Ecosystem">
+  <meta name="twitter:description" content="11 Families · 53 Sites · 87 npm Packages. Embed reference data widgets on any website.">
+  <meta name="twitter:image" content="https://fyipedia.com/static/og/homepage.png">
+
+  <link rel="canonical" href="https://widget.fyipedia.com">
+  <meta name="author" content="FYIPedia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "FYIPedia Widget Ecosystem",
+        "url": "https://widget.fyipedia.com",
+        "alternateName": "FYIPedia",
+        "description": "Umbrella widget hub for 11 FYI Families spanning 53 reference sites and 87 npm packages.",
+        "publisher": {"@type": "Organization", "name": "FYIPedia", "url": "https://fyipedia.com", "logo": "https://fyipedia.com/static/icon.svg", "sameAs": ["https://github.com/fyipedia", "https://www.npmjs.com/org/fyipedia"]}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "FYIPedia", "item": "https://fyipedia.com"},
+          {"@type": "ListItem", "position": 2, "name": "Widget Ecosystem"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "FYI Families",
+        "numberOfItems": 11,
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "url": "https://widget.creativefyi.com", "name": "Creative FYI"},
+          {"@type": "ListItem", "position": 2, "url": "https://widget.toolfyi.com", "name": "Utility FYI"},
+          {"@type": "ListItem", "position": 3, "url": "https://widget.drinkfyi.com", "name": "Beverage FYI"},
+          {"@type": "ListItem", "position": 4, "url": "https://widget.tagfyi.com", "name": "Tag FYI"},
+          {"@type": "ListItem", "position": 5, "url": "https://widget.naturefyi.com", "name": "Nature FYI"},
+          {"@type": "ListItem", "position": 6, "url": "https://widget.labfyi.com", "name": "Science FYI"},
+          {"@type": "ListItem", "position": 7, "url": "https://widget.bodyfyi.com", "name": "Health FYI"},
+          {"@type": "ListItem", "position": 8, "url": "https://widget.transitfyi.com", "name": "Transport FYI"},
+          {"@type": "ListItem", "position": 9, "url": "https://widget.wirefyi.com", "name": "Network FYI"},
+          {"@type": "ListItem", "position": 10, "url": "https://widget.earthfyi.com", "name": "Geo FYI"},
+          {"@type": "ListItem", "position": 11, "url": "https://widget.reffyi.com", "name": "Guide FYI"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "What is FYIPedia?", "acceptedAnswer": {"@type": "Answer", "text": "FYIPedia is an open-source ecosystem of 53 reference sites organized into 11 thematic families (Creative, Utility, Beverage, Tag, Nature, Science, Health, Transport, Network, Geo, Guide). Each site has a public REST API, npm embed package, and per-site widget docs. Everything is MIT licensed."}},
+          {"@type": "Question", "name": "How many widgets are available?", "acceptedAnswer": {"@type": "Answer", "text": "87 npm packages (one per site) with 10+ widget types each = 870+ unique widget variations. Plus family-level hubs aggregating multiple sites. All widgets share a unified Shadow DOM architecture, 4 themes, 2 styles."}},
+          {"@type": "Question", "name": "Are FYIPedia widgets free?", "acceptedAnswer": {"@type": "Answer", "text": "100% free. No paywall, no API key, no rate limit (within fair use). MIT licensed. Widgets show a 'Powered by [site]' backlink — the only requirement. Hosted on free CDN (jsDelivr)."}},
+          {"@type": "Question", "name": "How is the data sourced?", "acceptedAnswer": {"@type": "Answer", "text": "Each FYI site sources from authoritative origins: IUPAC + NIST (chemistry), IUCN + eBird (wildlife), POWO + Kew (plants), USDA + DrugBank + FDA (health), Hipparcos + Gaia (astronomy), IMA (minerals), GIA (gems), ICANN + RFCs (network), IATA + ICAO (transport), MaxMind GeoLite2 (IP). Data refreshes quarterly."}},
+          {"@type": "Question", "name": "Can I contribute or fork?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — all source repos at github.com/fyipedia. Per-site embed packages at fyipedia/{site}-embed. Family hubs at fyipedia/{family}-widget-hub. PRs welcome. Forking for commercial use is permitted under MIT license."}},
+          {"@type": "Question", "name": "What makes FYI Families different from other reference sites?", "acceptedAnswer": {"@type": "Answer", "text": "Three differentiators: (1) Cross-family linking — a font widget can reference unicode coverage, a chemistry widget can link to a mineral. (2) Consistent API + widget pattern across all 53 sites. (3) Open data + open source — anyone can embed without licensing fees, vendor lock-in, or API limits."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#8B5CF6' }, fontFamily: { mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] } } } }</script>
+  <script>(function(){var t = localStorage.getItem('theme'); if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');})();</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+  <style>
+    [x-cloak]{display:none!important}
+    :root{--accent:#8B5CF6} .accent-text{color:var(--accent)} .accent-bg{background-color:var(--accent)}
+    pre{tab-size:2;margin:0}
+    .code-block{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,monospace}
+    .hl-tag{color:#7dd3fc} .hl-attr{color:#86efac} .hl-val{color:#fde68a} .hl-comment{color:#475569;font-style:italic}
+    .family-card { transition: all 0.2s; }
+    .family-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.3); }
+    .gradient-text { background: linear-gradient(90deg, #6366F1, #8B5CF6, #A855F7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="https://fyipedia.com" class="flex items-center gap-2 font-bold text-lg gradient-text">
+        <svg class="w-5 h-5" style="color: #8B5CF6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        <span>FYIPedia</span>
+        <span class="text-xs font-normal text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full font-sans no-underline">Widget Ecosystem</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="#families" class="hover:text-accent">11 Families</a>
+        <a href="#widgets" class="hover:text-accent">All Hubs</a>
+        <a href="#sites" class="hover:text-accent">53 Sites</a>
+        <a href="#oss" class="hover:text-accent">OSS Packages</a>
+        <a href="#faq" class="hover:text-accent">FAQ</a>
+        <a href="https://github.com/fyipedia" class="hover:text-accent" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-violet-50 via-white to-indigo-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full" style="background: linear-gradient(90deg, #6366F1, #8B5CF6, #A855F7); color: white">The Widget Ecosystem</span>
+      <h1 class="mt-6 text-5xl sm:text-6xl font-bold tracking-tight">
+        <span class="gradient-text">FYIPedia</span>
+      </h1>
+      <p class="mt-2 text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100">Widget Ecosystem</p>
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        <strong>11 FYI Families · 53 reference sites · 87 npm packages.</strong> One ecosystem for embedding reference data — colors, fonts, units, chemistry, biology, transport, finance — on any website.
+      </p>
+      <p class="mt-4 text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+        Zero dependencies. Shadow DOM. 4 themes. Free CDN. MIT licensed. Backed by IUPAC + IUCN + USDA + DrugBank + ICANN + IATA + 20 more authoritative sources.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a href="#families" class="px-6 py-3 rounded-lg font-medium accent-bg text-white hover:opacity-90 transition">Browse 11 Families</a>
+        <a href="https://fyipedia.com" class="px-6 py-3 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">FYIPedia Home</a>
+        <a href="https://github.com/fyipedia" class="px-6 py-3 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" target="_blank" rel="noopener">GitHub Org ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 FAMILIES GRID -->
+  <section id="families" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-bold text-center">The 11 FYI Families</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Each family groups thematically related sites. Click family hub for widget docs.</p>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="https://widget.creativefyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-violet-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #8B5CF6, #EC4899)">C</div>
+            <div><h3 class="font-bold text-lg">Creative FYI</h3><p class="text-xs text-slate-500">5 sites · widget.creativefyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Color, font, emoji, symbol, unicode — design system reference</p>
+          <p class="text-xs text-slate-500"><a href="https://colorfyi.com" class="hover:underline">ColorFYI</a> · <a href="https://fontfyi.com" class="hover:underline">FontFYI</a> · <a href="https://emojifyi.com" class="hover:underline">EmojiFYI</a> · <a href="https://symbolfyi.com" class="hover:underline">SymbolFYI</a> · <a href="https://unicodefyi.com" class="hover:underline">UnicodeFYI</a></p>
+        </a>
+
+        <a href="https://widget.toolfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-blue-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #3B82F6, #0EA5E9)">U</div>
+            <div><h3 class="font-bold text-lg">Utility FYI</h3><p class="text-xs text-slate-500">4 sites · widget.toolfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Unit conversion, timezones, holidays, name analysis</p>
+          <p class="text-xs text-slate-500"><a href="https://unitfyi.com" class="hover:underline">UnitFYI</a> · <a href="https://timefyi.com" class="hover:underline">TimeFYI</a> · <a href="https://holidayfyi.com" class="hover:underline">HolidayFYI</a> · <a href="https://namefyi.com" class="hover:underline">NameFYI</a></p>
+        </a>
+
+        <a href="https://widget.drinkfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-rose-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #E11D48, #F59E0B)">B</div>
+            <div><h3 class="font-bold text-lg">Beverage FYI</h3><p class="text-xs text-slate-500">7 sites · widget.drinkfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Cocktails, wine, beer, whiskey, sake, tea, coffee</p>
+          <p class="text-xs text-slate-500"><a href="https://cocktailfyi.com" class="hover:underline">CocktailFYI</a> · <a href="https://vinofyi.com" class="hover:underline">VinoFYI</a> · <a href="https://beerfyi.com" class="hover:underline">BeerFYI</a> · <a href="https://whiskeyfyi.com" class="hover:underline">WhiskeyFYI</a> · <a href="https://nihonshufyi.com" class="hover:underline">NihonshuFYI</a> · <a href="https://teafyi.com" class="hover:underline">TeaFYI</a> · <a href="https://brewfyi.com" class="hover:underline">BrewFYI</a></p>
+        </a>
+
+        <a href="https://widget.tagfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-cyan-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #06B6D4, #4F46E5)">T</div>
+            <div><h3 class="font-bold text-lg">Tag FYI</h3><p class="text-xs text-slate-500">6 sites · widget.tagfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Barcode, QR, NFC, BLE, RFID, smartcard standards</p>
+          <p class="text-xs text-slate-500"><a href="https://barcodefyi.com" class="hover:underline">BarcodeFYI</a> · <a href="https://qrcodefyi.com" class="hover:underline">QRCodeFYI</a> · <a href="https://nfcfyi.com" class="hover:underline">NFCFYI</a> · <a href="https://blefyi.com" class="hover:underline">BLEFYI</a> · <a href="https://rfidfyi.com" class="hover:underline">RFIDFYI</a> · <a href="https://smartcardfyi.com" class="hover:underline">SmartCardFYI</a></p>
+        </a>
+
+        <a href="https://widget.naturefyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-emerald-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #10B981, #06B6D4)">N</div>
+            <div><h3 class="font-bold text-lg">Nature FYI</h3><p class="text-xs text-slate-500">5 sites · widget.naturefyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Species, birds, fish, plants, dinosaurs — biodiversity</p>
+          <p class="text-xs text-slate-500"><a href="https://speciesfyi.com" class="hover:underline">SpeciesFYI</a> · <a href="https://birdfyi.com" class="hover:underline">BirdFYI</a> · <a href="https://fishfyi.com" class="hover:underline">FishFYI</a> · <a href="https://plantfyi.com" class="hover:underline">PlantFYI</a> · <a href="https://dinofyi.com" class="hover:underline">DinoFYI</a></p>
+        </a>
+
+        <a href="https://widget.labfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-indigo-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #4F46E5, #8B5CF6)">S</div>
+            <div><h3 class="font-bold text-lg">Science FYI</h3><p class="text-xs text-slate-500">5 sites · widget.labfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Chemistry, alloys, gemstones, stars, minerals</p>
+          <p class="text-xs text-slate-500"><a href="https://chemfyi.com" class="hover:underline">ChemFYI</a> · <a href="https://alloyfyi.com" class="hover:underline">AlloyFYI</a> · <a href="https://gemfyi.com" class="hover:underline">GemFYI</a> · <a href="https://starfyi.com" class="hover:underline">StarFYI</a> · <a href="https://mineralfyi.com" class="hover:underline">MineralFYI</a></p>
+        </a>
+
+        <a href="https://widget.bodyfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-rose-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #E11D48, #14B8A6)">H</div>
+            <div><h3 class="font-bold text-lg">Health FYI</h3><p class="text-xs text-slate-500">4 sites · widget.bodyfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Anatomy, pill ID, drugs, nutrition (educational only)</p>
+          <p class="text-xs text-slate-500"><a href="https://anatomyfyi.com" class="hover:underline">AnatomyFYI</a> · <a href="https://pillfyi.com" class="hover:underline">PillFYI</a> · <a href="https://drugfyi.com" class="hover:underline">DrugFYI</a> · <a href="https://nutrifyi.com" class="hover:underline">NutriFYI</a></p>
+        </a>
+
+        <a href="https://widget.transitfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-orange-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #EA580C, #3B82F6)">T</div>
+            <div><h3 class="font-bold text-lg">Transport FYI</h3><p class="text-xs text-slate-500">4 sites · widget.transitfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Airports, airlines, aircraft, railway stations</p>
+          <p class="text-xs text-slate-500"><a href="https://airportfyi.com" class="hover:underline">AirportFYI</a> · <a href="https://airlinefyi.com" class="hover:underline">AirlineFYI</a> · <a href="https://planefyi.com" class="hover:underline">PlaneFYI</a> · <a href="https://trainfyi.com" class="hover:underline">TrainFYI</a></p>
+        </a>
+
+        <a href="https://widget.wirefyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-indigo-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #4338CA, #7C3AED)">N</div>
+            <div><h3 class="font-bold text-lg">Network FYI</h3><p class="text-xs text-slate-500">4 sites · widget.wirefyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Submarine cables, TLDs, IPs, HTTP status codes</p>
+          <p class="text-xs text-slate-500"><a href="https://cablefyi.com" class="hover:underline">CableFYI</a> · <a href="https://tldfyi.com" class="hover:underline">TLDFYI</a> · <a href="https://ipfyi.com" class="hover:underline">IPFYI</a> · <a href="https://statuscodefyi.com" class="hover:underline">StatusCodeFYI</a></p>
+        </a>
+
+        <a href="https://earthfyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-amber-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #D97706, #EA580C)">G</div>
+            <div><h3 class="font-bold text-lg">Geo FYI</h3><p class="text-xs text-slate-500">4 sites · widget.earthfyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Distance, mountains, earthquakes, ZIP codes</p>
+          <p class="text-xs text-slate-500"><a href="https://distancefyi.com" class="hover:underline">DistanceFYI</a> · <a href="https://mountainfyi.com" class="hover:underline">MountainFYI</a> · <a href="https://quakefyi.com" class="hover:underline">QuakeFYI</a> · <a href="https://zipfyi.com" class="hover:underline">ZipFYI</a></p>
+        </a>
+
+        <a href="https://widget.reffyi.com" class="family-card block p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 hover:border-rose-300">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center text-white text-xl font-bold" style="background: linear-gradient(135deg, #E11D48, #A855F7)">G</div>
+            <div><h3 class="font-bold text-lg">Guide FYI</h3><p class="text-xs text-slate-500">4 sites · widget.reffyi.com</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">Calculators, salary, universities, board games</p>
+          <p class="text-xs text-slate-500"><a href="https://calcfyi.com" class="hover:underline">CalcFYI</a> · <a href="https://salaryfyi.com" class="hover:underline">SalaryFYI</a> · <a href="https://univfyi.com" class="hover:underline">UnivFYI</a> · <a href="https://boardgamefyi.com" class="hover:underline">BoardGameFYI</a></p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL WIDGET HUBS -->
+  <section id="widgets" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-bold text-center">All Widget Hubs</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Family-level widget documentation hubs (this page is the umbrella).</p>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <a href="https://widget.creativefyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.creativefyi.com</p><p class="text-xs text-slate-500">Creative FYI — color, font, emoji, symbol, unicode</p>
+        </a>
+        <a href="https://widget.toolfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.toolfyi.com</p><p class="text-xs text-slate-500">Utility FYI — unit, time, holiday, name</p>
+        </a>
+        <a href="https://widget.drinkfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.drinkfyi.com</p><p class="text-xs text-slate-500">Beverage FYI — cocktails, wine, beer, etc.</p>
+        </a>
+        <a href="https://widget.tagfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.tagfyi.com</p><p class="text-xs text-slate-500">Tag FYI — barcode, QR, NFC, BLE, RFID</p>
+        </a>
+        <a href="https://widget.naturefyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.naturefyi.com</p><p class="text-xs text-slate-500">Nature FYI — species, birds, plants, dinos</p>
+        </a>
+        <a href="https://widget.labfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.labfyi.com</p><p class="text-xs text-slate-500">Science FYI — chem, alloy, gem, star, mineral</p>
+        </a>
+        <a href="https://widget.bodyfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.bodyfyi.com</p><p class="text-xs text-slate-500">Health FYI — anatomy, pill, drug, nutrition</p>
+        </a>
+        <a href="https://widget.transitfyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.transitfyi.com</p><p class="text-xs text-slate-500">Transport FYI — airport, airline, plane, train</p>
+        </a>
+        <a href="https://widget.wirefyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.wirefyi.com</p><p class="text-xs text-slate-500">Network FYI — cable, TLD, IP, status code</p>
+        </a>
+        <a href="https://widget.reffyi.com" class="block p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-violet-300">
+          <p class="font-semibold accent-text">widget.reffyi.com</p><p class="text-xs text-slate-500">Guide FYI — calc, salary, univ, board game</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK START -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-bold text-center">Quick Start</h2>
+      <div class="mt-8 max-w-3xl mx-auto">
+        <pre class="code-block"><code><span class="hl-comment">&lt;!-- Add any FYI widget script (87 to choose from) --&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/colorfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+
+<span class="hl-comment">&lt;!-- Drop a widget anywhere --&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-colorfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"violet-500"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- OSS PACKAGES -->
+  <section id="oss" class="py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-bold text-center">87 npm Packages</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">One per site. Plus Python SDKs (PyPI) for select families.</p>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">npm Embed</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-2">53 packages — one per FYI site</p>
+          <a href="https://www.npmjs.com/org/fyipedia" class="text-sm accent-text hover:underline" target="_blank" rel="noopener">@fyipedia on npm →</a>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">PyPI SDKs</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-2">Python clients for major sites</p>
+          <a href="https://pypi.org/user/fyipedia/" class="text-sm accent-text hover:underline" target="_blank" rel="noopener">fyipedia on PyPI →</a>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">GitHub Source</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 mb-2">All source repos open</p>
+          <a href="https://github.com/fyipedia" class="text-sm accent-text hover:underline" target="_blank" rel="noopener">github.com/fyipedia →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 space-y-4">
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">What is FYIPedia?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">An open-source ecosystem of <strong>53 reference sites</strong> organized into <a href="#families" class="accent-text hover:underline">11 thematic families</a>. Each site has a public REST API, npm embed package, and per-site widget docs. MIT licensed.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">How many widgets are available?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><strong>87 npm packages</strong> (one per site) with 10+ widget types each = 870+ unique widget variations. Plus 10 family-level hubs (this page is the umbrella).</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">Are FYIPedia widgets free?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">100% free. No paywall, no API key, no rate limit. MIT licensed. Widget footer shows "Powered by [site]" — the only requirement. Hosted on free CDN (jsDelivr).</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">How is the data sourced?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">Each site sources from authoritative origins: <strong>IUPAC + NIST</strong> (chemistry), <strong>IUCN + eBird</strong> (wildlife), <strong>POWO + Kew</strong> (plants), <strong>USDA + DrugBank + FDA</strong> (health), <strong>Hipparcos + Gaia</strong> (astronomy), <strong>IMA</strong> (minerals), <strong>GIA</strong> (gems), <strong>ICANN + RFCs</strong> (network), <strong>IATA + ICAO</strong> (transport), <strong>MaxMind GeoLite2</strong> (IP). Quarterly refresh.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">Can I contribute or fork?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">Yes — all source repos at <a href="https://github.com/fyipedia" target="_blank" rel="noopener" class="accent-text hover:underline">github.com/fyipedia</a>. Per-site embed packages at <code>fyipedia/{site}-embed</code>. Family hubs at <code>fyipedia/{family}-widget-hub</code>. PRs welcome.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950"><summary class="font-semibold cursor-pointer">What makes FYI Families different?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">Three differentiators: <strong>(1) Cross-family linking</strong> — a font widget can reference unicode coverage, a chemistry widget can link to a mineral. <strong>(2) Consistent API + widget pattern</strong> across all 53 sites. <strong>(3) Open data + open source</strong> — embed without licensing fees, vendor lock-in, or API limits.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div>
+          <h3 class="font-bold mb-3">Widget Hubs (10)</h3>
+          <ul class="space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://widget.creativefyi.com" class="hover:accent-text">Creative FYI</a></li>
+            <li><a href="https://widget.toolfyi.com" class="hover:accent-text">Utility FYI</a></li>
+            <li><a href="https://widget.drinkfyi.com" class="hover:accent-text">Beverage FYI</a></li>
+            <li><a href="https://widget.tagfyi.com" class="hover:accent-text">Tag FYI</a></li>
+            <li><a href="https://widget.naturefyi.com" class="hover:accent-text">Nature FYI</a></li>
+            <li><a href="https://widget.labfyi.com" class="hover:accent-text">Science FYI</a></li>
+            <li><a href="https://widget.bodyfyi.com" class="hover:accent-text">Health FYI</a></li>
+            <li><a href="https://widget.transitfyi.com" class="hover:accent-text">Transport FYI</a></li>
+            <li><a href="https://widget.wirefyi.com" class="hover:accent-text">Network FYI</a></li>
+            <li><a href="https://widget.reffyi.com" class="hover:accent-text">Guide FYI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">Top Sites</h3>
+          <ul class="space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://colorfyi.com" class="hover:accent-text">ColorFYI</a></li>
+            <li><a href="https://fontfyi.com" class="hover:accent-text">FontFYI</a></li>
+            <li><a href="https://emojifyi.com" class="hover:accent-text">EmojiFYI</a></li>
+            <li><a href="https://airportfyi.com" class="hover:accent-text">AirportFYI</a></li>
+            <li><a href="https://birdfyi.com" class="hover:accent-text">BirdFYI</a></li>
+            <li><a href="https://distancefyi.com" class="hover:accent-text">DistanceFYI</a></li>
+            <li><a href="https://chemfyi.com" class="hover:accent-text">ChemFYI</a></li>
+            <li><a href="https://timefyi.com" class="hover:accent-text">TimeFYI</a></li>
+            <li><a href="https://unitfyi.com" class="hover:accent-text">UnitFYI</a></li>
+            <li><a href="https://cocktailfyi.com" class="hover:accent-text">CocktailFYI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">Resources</h3>
+          <ul class="space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://fyipedia.com" class="hover:accent-text">FYIPedia Home</a></li>
+            <li><a href="https://fyipedia.com/families/" class="hover:accent-text">All 11 Families</a></li>
+            <li><a href="https://fyipedia.com/developers/" class="hover:accent-text">Developer Hub</a></li>
+            <li><a href="https://fyipedia.com/api/" class="hover:accent-text">Unified API</a></li>
+            <li><a href="https://fyipedia.com/about/" class="hover:accent-text">About</a></li>
+            <li><a href="https://fyipedia.com/contact/" class="hover:accent-text">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">Open Source</h3>
+          <ul class="space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://github.com/fyipedia" target="_blank" rel="noopener" class="hover:accent-text">github.com/fyipedia</a></li>
+            <li><a href="https://www.npmjs.com/org/fyipedia" target="_blank" rel="noopener" class="hover:accent-text">npm @fyipedia</a></li>
+            <li><a href="https://pypi.org/user/fyipedia/" target="_blank" rel="noopener" class="hover:accent-text">PyPI fyipedia</a></li>
+            <li><a href="https://cdn.jsdelivr.net" target="_blank" rel="noopener" class="hover:accent-text">jsDelivr CDN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-between gap-4">
+        <p>Built with care by <a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a>. MIT licensed.</p>
+        <p><strong>11 Families · 53 Sites · 87 Packages</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
